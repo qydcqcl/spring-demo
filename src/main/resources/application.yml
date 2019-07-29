@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+
+#自定义属性
+person:
+  name: ming
+  age: 18
+  #属性间的引用
+  all: ${person.name}--${person.age}
